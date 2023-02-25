@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 15px 5px;
+}
+
+.header-background {
+    color: rgba(255,255,255,.85);
+    border-top: 4px double rgba(255,255,255,.25);
+    border-bottom: 4px double rgba(255,255,255,.25);
+    font-size: 1.5rem;
+    width: 80%;
+    position: absolute;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 15px 0px;
+}
+
+.header-background::after {
+    content: ' ';
+    background: black;
+    width: 100%;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 107%;
+    animation: slider 1.5s ease-in-out forwards;
+    transform-origin: 0 0;
+}
+
+.header-title-item {
+    margin: 0 8px;
+}
+
+.dot::after {
+    content: '.';
+    position: absolute;
+    top: 12.5%;
+    margin: 0 5px;
+}
+
+
+@keyframes slider{
+    from {
+        transform: scaleX(1);
+    }
+  
+    to {
+        transform: scaleX(0);
+    }
+  }
